@@ -1,1 +1,6 @@
-# Testing
+Test Case Id	Test Scenario	Test Case Title	Pre-requisite	Test Steps	Test Data	Expected Result
+TC001	Valid Login	Successful Login with correct credentials	User account exists	1. Navigate to the login page	Username: testuser Password: password123	User is redirected to the dashboard/home page
+TC002	Invalid Login	Unsuccessful Login with incorrect password	User account exists	1. Navigate to the login page <br> 2. Enter Username: testuser <br> 3. Enter Password: incorrect123	Username and password are not accepted <br> User sees an error message indicating invalid credentials	
+TC003	Invalid Login	Unsuccessful Login with non-existent username	User account does not exist	1. Navigate to the login page <br> 2. Enter Username: nonexistentuser <br> 3. Enter Password: password123	Username and password are not accepted <br> User sees an error message indicating invalid credentials	
+TC004	Invalid Login	Unsuccessful Login with empty fields	User account exists	1. Navigate to the login page <br> 2. Leave both Username and Password fields empty	Username and password are not accepted <br> User sees an error message indicating required fields	
+TC005	Logout	Successful Logout	User is logged in	1. Navigate to the dashboard/home page <br> 2. Click on the "Logout" button	User is redirected to the login page# Testing
